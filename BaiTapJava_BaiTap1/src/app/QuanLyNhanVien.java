@@ -3,7 +3,7 @@ package app;
 import java.util.ArrayList;
 
 public class QuanLyNhanVien implements  IQuanLy {
-    ArrayList<NhanVien> dsNhanVien = new ArrayList<NhanVien>();
+    ArrayList<NhanVien>dsNhanVien = new ArrayList<NhanVien>();
     @Override
     public void them(NhanVien nv) {
         dsNhanVien.add(nv);
@@ -11,9 +11,9 @@ public class QuanLyNhanVien implements  IQuanLy {
 
     @Override
     public void inDS() {
-        for (int i = 0;i<dsNhanVien.size();i++){
-            System.out.println(i+1+" ---------------------------------------------------------------------------------------------------------");
-            System.out.println(dsNhanVien.get(i).getThongTin());
+        System.out.println("\nDanh sach nhan vien trong cong ty: ");
+        for (int i = 0; i < dsNhanVien.size() ; i++){
+            System.out.println(i+1 + ". " + dsNhanVien.get(i).getThongTin());
         }
     }
 }
