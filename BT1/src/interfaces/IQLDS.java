@@ -1,11 +1,10 @@
 package interfaces;
 
-import tuongnghi_59131563.CaNhan;
+import parts.CaNhan;
+import java.util.ArrayList;
 
 public interface IQLDS {
-    public abstract int them(CaNhan cn);
-
-    public abstract int xoa(String ten);
- 
-    public abstract void inDS();
+    public int them(CaNhan caNhan);
+    public int xoa(String ten);
+    public void inDS(ArrayList<CaNhan> ds);
 }
