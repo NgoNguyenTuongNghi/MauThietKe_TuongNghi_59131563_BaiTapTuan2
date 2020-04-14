@@ -28,7 +28,7 @@ public class GiaoVien extends CaNhan {
 
     @Override
     String hienThiTT() {
-        return "Hoten: " + getHoten() + " -- Tuoi:" + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: "+ getSdt() 
+        return "Hoten: " + getHoten() + " -- Tuoi: " + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: "+ getSdt() 
             + " -- Mon day: " + getMonDay() + " -- To bo mon: "+getToBoMon();
     }
 }
